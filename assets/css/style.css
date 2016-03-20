@@ -689,6 +689,10 @@ a.readmore:hover {
   animation: none;
 }
 
+#skipTo {
+  cursor: pointer;
+}
+
 /*
 .AAR {
    #AAText {

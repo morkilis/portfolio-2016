@@ -136,10 +136,17 @@ $(document).ready(function(){
 
     $(medium).addClass('similar-media');
     $(medium).parent().siblings().addClass('similar-media');
-    
+
     $('.similar-media').mouseleave(function() {
       $(medium).removeClass('similar-media');
       $(medium).parent().siblings().removeClass('similar-media');
-    });
+    });  
   });
+
+  $('#skipTo').click(function(){
+     var vid = document.getElementById("ec-vid");
+     vid.pause();
+     vid.currentTime = 111;
+     vid.play();
+   });
 });
