@@ -1,0 +1,254 @@
+@font-face {
+   font-family: Basis-Grotesque-Bold;
+   src: url(../fonts/basis_grotesque_bold.otf);
+}
+
+@font-face {
+   font-family: Anti-Alias;
+   src: url(../fonts/Anti-Alias-Regular.otf);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400);
+
+%regular {
+   color: $dark_grey;
+   font-family: Basis-Grotesque-Bold, Helvetica, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin lora {
+   font-weight: 400;
+   font-family: 'Lora', serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin body {
+   font-size: 15px;
+   line-height: 19px;
+}
+
+body {
+   @extend %regular;
+}
+
+header, p, a, ul, aside, figcaption {
+   @include body;
+}
+
+p {
+   text-indent: 40px;
+   &:first-of-type, &.unindent {
+      text-indent: 0;
+   }
+   &:last-of-type{
+      margin-bottom: 40px;
+   }
+   >span {
+      color: $blue;
+      font-size: 18px;
+      font-family: courier;
+   }
+   &.unindent {
+      font-size: 12px;
+      line-height: 15px;
+   }
+}
+
+h1 {
+   font-size: 60px;
+   line-height: 58px;
+   letter-spacing: -1.8px;
+   text-align: center;
+   span{
+     color: $blue;
+     cursor: pointer;
+    }
+    @include at-tablet {
+      font-size: 42px;
+      line-height: 37px;
+      letter-spacing: -1.8px;
+    }
+    @include at-mobile {
+      font-size: 30px;
+      line-height: 27px;
+      letter-spacing: -1.8px;
+    }
+}
+
+h2 {
+   font-size: 22px;
+   line-height: 34px;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   margin-top: 0;
+   @include at-tablet {
+    text-align: center;
+    margin-top: 20px;
+   }
+}
+
+h3 {
+   font-size: 20px;
+   line-height: 24px;
+   margin: 40px 0 24px 0;
+   color: black;
+  &.visitsite > a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @include at-tablet {
+      margin-top: 20px;
+    }
+}
+
+header {
+   a {
+   color: $dark_grey;
+   border-bottom: none;
+   &:hover{
+      border-bottom: none;
+      }
+   }
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  border-bottom: 1px dashed $blue;
+  &:hover{
+    border-bottom: 1px solid $blue;
+  }
+  &.readmore {
+   border: 1px dashed $blue;
+   border-radius: 2px;
+   padding: 10px;
+   &:hover{
+      border: 1px solid $blue;
+    }
+  }
+}
+  
+
+
+
+
+#AAText {
+   font-family: Anti-Alias;
+   color: black;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-size: 940px;
+   line-height: 114px;
+   overflow: hidden;
+   height: 488px;
+   &:after {
+      animation: changeLetters 26s linear infinite;
+      -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+       animation-delay: 1s;
+      content: "A";
+   }
+}
+
+.other-featured {
+   h2 {
+      margin-bottom: 100px;
+   }
+   a {
+      color: $dark_grey;
+   }
+   #AAText {
+    font-size: 320px;
+    line-height: 32px;
+    height: 163px;
+    &:after {
+      animation: none;
+    }
+  }
+}
+/*
+.AAR {
+   #AAText {
+    font-size: 700px;
+    line-height: 90px;
+    text-align: right;
+    @include at-mobile {
+      text-align: center;
+    }
+ }
+}*/
+
+.AAI {
+   .AAI-type{
+      margin-top: 12px;
+      font-size: 80px;
+       line-height: 50px;
+       letter-spacing: -4px;
+      &.lora{
+         @include lora;
+
+      }
+      &.basis{
+         
+      }
+   }
+}
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+section ul, section ul a{
+   color: $light_blue;
+   opacity: 0.8;
+   padding: 12px 0;
+}
+
+span > a {
+   color: inherit;
+   cursor: pointer;
+}
+
+span > a:hover , section ul a:hover, .similar-media {
+   color: white;
+   opacity: 1;
+   @include transition(300ms);
+   letter-spacing: 0.3px;
+}
+
+.all-other li:hover {
+   background-color: rgba(144,195, 212, 0.1);
+   @include transition(300ms);
+}
+
+a:hover, a:active, a:focus {
+   outline: none;
+}
+
+aside {
+   @include lora;
+   font-style: italic;
+   color: $dark_grey;
+   opacity: 0.9;
+   text-indent: -6px;
+   margin: 0 50px 0 50px;
+   line-height: 20px;
+}
+
+.number {
+   font-size: 42px;
+   line-height: 84px;
+   color: black;
+}
+
+figcaption {
+   font-size: 12px;
+   line-height: 15px;
+   margin-bottom: 30px;
+}
+
+.all-other span > a {
+   @include transition(300ms);
+   cursor: default;
+}

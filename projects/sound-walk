@@ -1,0 +1,107 @@
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <!-- // jaco snippet -->
+   // <script type="text/javascript">
+   // (function(e, t) {
+   //     function r(e, t) {
+   //         e[t] = function() {
+   //             e.push([ t ].concat(Array.prototype.slice.call(arguments, 0)));
+   //         };
+   //     }
+   //     var n = "JacoRecorder";
+   //     (function(e, t, i, s) {
+   //         if (!i.__VERSION) {
+   //             e[n] = i;
+   //             var o = [ "init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo" ];
+   //             for (var u = 0; u < o.length; u++) r(i, o[u]);
+   //             i.__VERSION = .9, i.__INIT_TIME = 1 * new Date;
+   //             var a = t.createElement("script");
+   //             a.async = !0, a.setAttribute("crossorigin", "anonymous"), a.src = s;
+   //             var f = t.getElementsByTagName("head")[0];
+   //             f.appendChild(a);
+   //         }
+   //     })(e, t, e[n] || [], "//recorder-assets.getjaco.com/recorder.js");
+   // }).call(window, window, document), window.JacoRecorder.push([ "init", "7365b8c2-6d60-4068-9756-70cea2270815", {} ]);
+   // </script>
+   <title>
+      Maurann Stein
+   </title>
+   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
+   <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+   <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /> 
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <link rel='stylesheet' media='screen and (min-width: 1px)' href='../assets/css/style.css' />
+   <!-- <meta property="og:type" content="website">
+   <meta property="og:title" content="Artificial Art">
+   <meta name="description" content="Artificial Art is an exhibition that explores the work created by the anonymous workers commissioned via Amazon’s Mechanical Turk. All artworks presented in the event will be offered for sale at the live auction closing the exhibition.">
+   <meta property="og:url" content="http://www.artificialart.net/">
+   <meta property="og:site_name" content="Artificial Art">
+   <meta property="og:locale" content="en_US"> -->
+</head>
+
+<body>
+   <main class="project-page">
+      <header>
+         <ul>
+            <li>12:34pm&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="../index.html">Other Projects</a></li>
+            <li>&nbsp;&nbsp;|&nbsp;&nbsp;Partly Cloudy</li>
+         </ul>
+      </header>
+      <section class="other-projects">
+         <div class="title-teaser">
+            <h1>Sound Walk</h1>
+            <!-- <h3 class="visitsite">
+               <a href="http://maurannstein.com/game/" target="_blank">Visit site</a>
+            </h3> -->
+            <h3>
+               Sounds Walk  was an urban experience in Manhattan on the morning of Febuary 19, 2014.
+            </h3>
+         </div>
+         <article>
+            <figure class="featured-image">
+               <img src="../assets/images/SW-5.jpg"/>
+            </figure>
+            <div class="six-columns">
+               <figure>
+                  <img src="../assets/images/SW-1.jpg"/>
+               </figure>
+            </div>
+            <div class="six-columns clear">
+               <p>
+                  Each person in the group got a small phone-book and was instructed to pick a number from it<span>*</span>, call it, and follow the directions given by the person on the other end.
+               </p>
+               <p>
+                  This strange guided audio experience prompted a shift from one sense to the other, from the visual to the tactile, to the auditory. It provided the listener with a new and different relationship with a specific geographic area, and triggered a moment of auditory intimacy with a complete stranger.
+               </p>
+               <p class="unindent">
+                  <span>*</span>(The phone numbers in the book were picked carefully from a group of close friends who did not know the ‘sound walkers’).
+               </p>
+            </div>
+            <div>
+               <figure>
+                  <img src="../assets/images/SW-2.jpg"/>
+               </figure>
+               <figure>
+                  <img src="../assets/images/SW-7.gif"/>
+               </figure>
+            </div>
+            <div class="six-columns">
+               <figure>
+                  <img src="../assets/images/SW-3.jpg"/>
+               </figure> 
+            </div>
+            <div class="six-columns clear">
+               <figure>
+                  <img src="../assets/images/SW-4.jpg"/>
+               </figure>
+            </div>
+         </article>
+      </section>
+      <section class="all-other" id="projects"></section>
+   </main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>

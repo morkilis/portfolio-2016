@@ -1,0 +1,100 @@
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <!-- // jaco snippet -->
+   // <script type="text/javascript">
+   // (function(e, t) {
+   //     function r(e, t) {
+   //         e[t] = function() {
+   //             e.push([ t ].concat(Array.prototype.slice.call(arguments, 0)));
+   //         };
+   //     }
+   //     var n = "JacoRecorder";
+   //     (function(e, t, i, s) {
+   //         if (!i.__VERSION) {
+   //             e[n] = i;
+   //             var o = [ "init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo" ];
+   //             for (var u = 0; u < o.length; u++) r(i, o[u]);
+   //             i.__VERSION = .9, i.__INIT_TIME = 1 * new Date;
+   //             var a = t.createElement("script");
+   //             a.async = !0, a.setAttribute("crossorigin", "anonymous"), a.src = s;
+   //             var f = t.getElementsByTagName("head")[0];
+   //             f.appendChild(a);
+   //         }
+   //     })(e, t, e[n] || [], "//recorder-assets.getjaco.com/recorder.js");
+   // }).call(window, window, document), window.JacoRecorder.push([ "init", "7365b8c2-6d60-4068-9756-70cea2270815", {} ]);
+   // </script>
+   <title>
+      Maurann Stein
+   </title>
+   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
+   <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+   <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /> 
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <link rel='stylesheet' media='screen and (min-width: 1px)' href='../assets/css/style.css' />
+   <!-- <meta property="og:type" content="website">
+   <meta property="og:title" content="Artificial Art">
+   <meta name="description" content="Artificial Art is an exhibition that explores the work created by the anonymous workers commissioned via Amazon’s Mechanical Turk. All artworks presented in the event will be offered for sale at the live auction closing the exhibition.">
+   <meta property="og:url" content="http://www.artificialart.net/">
+   <meta property="og:site_name" content="Artificial Art">
+   <meta property="og:locale" content="en_US"> -->
+</head>
+
+<body>
+   <main class="project-page">
+      <header>
+         <ul>
+            <li>12:34pm&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="../index.html">Other Projects</a></li>
+            <li>&nbsp;&nbsp;|&nbsp;&nbsp;Partly Cloudy</li>
+         </ul>
+      </header>
+      <section class="other-projects">
+         <div class="title-teaser">
+            <h1>Teabox</h1>
+            <!-- <h3 class="visitsite">
+               <a href="http://maurannstein.com/game/" target="_blank">Visit site</a>
+            </h3> -->
+            <h3>
+               With Belinda Chen, Jang Hyun Han, Sue Lee, at Pentagram: Team Natasha Jen
+            </h3>
+         </div>
+         <article>
+            <figure class="featured-image">
+               <img src="../assets/images/Teabox01.png"/>
+            </figure>
+            <div class="six-columns">
+               <figure>
+                  <img src="../assets/images/Teabox04.png"/>
+               </figure>
+               <figure>
+                  <img src="../assets/images/Teabox05.png"/>
+               </figure>
+            </div>
+            <div class="five-columns shift-one clear">
+               <p>
+                  The most widely consumed beverage in the world next to water, tea is still largely produced and distributed much as it was two centuries ago, often at the expense of freshness. Teabox is a tea-commerce company that is seeking to revolutionize the experience of one of the oldest drinks in history by bringing it directly to the consumer. Pentagram’s Natasha Jen and her team have designed a bold new identity, packaging and website for the online retailer that will help establish it as a global brand.
+               </p>
+               <p>
+                  “The tea business is an old industry and its visuals still thrive on common clichés,” says Jen. “We wanted to strike a different note that would convey Teabox as a creative and premium brand that is rooted in tea tradition.”
+               </p>
+               <p>
+                  The freshness of the tea is reflected in the packaging, which appears in crisp, clean white and a palette of bright colors. The industrial look of the typography is set off by special papers and colors that create a luxurious, tactile, personal experience of the brand. The Teabox tagline is “Every cup a journey,” and the typography turns every box into a mini-crate with special foil-stamped stencil lettering. The surfaces of the containers are further covered in a different custom textured pattern in a clear gloss varnish. (Pentagram)
+               </p>
+            </div>
+            <div>
+               <figure>
+                  <img src="../assets/images/Teabox02.png"/>
+               </figure>
+               <figure>
+                  <img src="../assets/images/Teabox03.png"/>
+               </figure>
+            </div>
+         </article>
+      </section>
+      <section class="all-other" id="projects"></section>
+   </main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>

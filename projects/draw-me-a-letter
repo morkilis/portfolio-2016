@@ -1,0 +1,277 @@
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <!-- // jaco snippet -->
+   // <script type="text/javascript">
+   // (function(e, t) {
+   //     function r(e, t) {
+   //         e[t] = function() {
+   //             e.push([ t ].concat(Array.prototype.slice.call(arguments, 0)));
+   //         };
+   //     }
+   //     var n = "JacoRecorder";
+   //     (function(e, t, i, s) {
+   //         if (!i.__VERSION) {
+   //             e[n] = i;
+   //             var o = [ "init", "identify", "startRecording", "stopRecording", "removeUserTracking", "setUserInfo" ];
+   //             for (var u = 0; u < o.length; u++) r(i, o[u]);
+   //             i.__VERSION = .9, i.__INIT_TIME = 1 * new Date;
+   //             var a = t.createElement("script");
+   //             a.async = !0, a.setAttribute("crossorigin", "anonymous"), a.src = s;
+   //             var f = t.getElementsByTagName("head")[0];
+   //             f.appendChild(a);
+   //         }
+   //     })(e, t, e[n] || [], "//recorder-assets.getjaco.com/recorder.js");
+   // }).call(window, window, document), window.JacoRecorder.push([ "init", "7365b8c2-6d60-4068-9756-70cea2270815", {} ]);
+   // </script>
+   <title>
+      Maurann Stein
+   </title>
+   <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
+   <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+   <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /> 
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <link rel='stylesheet' media='screen and (min-width: 1px)' href='../assets/css/style.css' />
+   <!-- <meta property="og:type" content="website">
+   <meta property="og:title" content="Artificial Art">
+   <meta name="description" content="Artificial Art is an exhibition that explores the work created by the anonymous workers commissioned via Amazon’s Mechanical Turk. All artworks presented in the event will be offered for sale at the live auction closing the exhibition.">
+   <meta property="og:url" content="http://www.artificialart.net/">
+   <meta property="og:site_name" content="Artificial Art">
+   <meta property="og:locale" content="en_US"> -->
+</head>
+
+<body>
+   <main class="project-page">
+      <header>
+         <ul>
+            <li>12:34pm&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="../index.html">Selected Projects</a></li>
+            <li>&nbsp;&nbsp;|&nbsp;&nbsp;Partly Cloudy</li>
+         </ul>
+      </header>
+      <section class="DMAL">
+         <div class="title-teaser">
+            <h1>Draw Me A Letter</h1>
+            <h3 class="visitsite">
+               <a href="http://maurannstein.com/draw-me-a-letter/" target="_blank">Visit site</a>
+            <h3>
+            <h3>
+               A program that creates a map of the hidden gestures resulting from typing on a computer keyboard.
+            </h3>
+         </div>
+         <article>
+            <figure class="featured-image">
+               <a target="_blank" class="visit-site" href="http://maurannstein.com/draw-me-a-letter/"><img src="../assets/images/DMALGif-in-browser.gif"/></a>
+            </figure>
+           <div class="five-columns">
+               <figure>
+                  <img src="../assets/images/keys-hand-position.png" style="width: 100%; height: auto; margin-bottom: 12px"/>
+                  <figcaption>
+                     Home position - Hand position for type writing on a QWERTZ keyboard.
+                  </figcaption>
+               </figure>
+               <div class="six-columns">
+                  <figure class="twin">
+                     <img src="../assets/images/mouse_draw_web.jpg"/> 
+                  </figure>
+               </div>
+               <div class="six-columns clear">
+                  <figure class="twin">
+                     <img src="../assets/images/mouse_draw_web2.jpg"/>
+                  </figure>
+               </div>
+               <figcaption>
+                  Jessica Greenfield's <i>Hidden Gestures</i>: a collection of drawings showcasing the unseen gestures of designers in a digital design process.
+               </figcaption>
+            </div>
+            <div class="six-columns shift-one">
+               <h3>
+                  Tracing hidden gestures
+               </h3>
+               <p>
+                  I wanted to create a tool that explores an alternative way to document text typed on the computer. I tried to focus on the visual trace that results from our typing on the keyboard and see if any patterns evolve.
+               </p>
+               <p>
+                  One aspect I especially love about this project is the way it tracks my mistakes when I type — unlike most digital writing tools. Anytime I hit the backspace, a line is drawn and added to the encrypted image, similar to when I write by hand.
+               </p>
+               <div>
+                  <h3>Initial wireframes</h3>
+                  <p>
+                     After I developed the basic idea of what I wanted to build, I started to think about its design and how users might approach it. I sketched out a few ideas and came up with a simple interface that puts the user's visual unput at the center.
+                  </p>
+                  <p>
+                     I couldn’t really predict what the traces will look like, but while I was working and thinking about it, I realized it could be really cool if I added a feature that will allow my users to download and save their text-drawing. Another functionality I wanted to add was to allow users to view their input in text-form.
+                  </p>
+               </div>
+            </div>
+         </article>
+         <article>
+            <div class="six-columns">
+               <figure>
+                  <img src="../assets/images/DMAL-wireframe1.png"/>
+               </figure>
+            </div>
+            <div class="six-columns">
+               <figure>
+                  <img src="../assets/images/DMAL-wireframe2.png"/>
+               </figure>
+            </div>    
+         </article>
+         <article>
+            <div class="eight-columns center">
+               <h3>
+                  Mapping out the keyboard
+               </h3>
+            </div>
+            <figure>
+               <img src="../assets/images/DMAL-keyboard.jpg"/>
+            </figure>
+            <!-- <img src="../assets/images/DMAL-keyboard.jpg" style="width: 100%; height: auto; margin-bottom: 100px"/> -->
+            <div class="six-columns">
+               <p>
+                  I had to proportionately map out all the keyboard keys in order for the tracking to be accurate. So I created coordinates for every key based on it placement on the keyboard, and later referenced these points in a function that draws lines between two points. This way I was able to update the last typed key as the place to which the line will continue.
+               </p>
+            </div>      
+         </article>
+         <article>
+            <div class="seven-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_eyes.gif" />
+               </figure>
+            </div>
+            <div class="five-columns clear">
+               <h3>Features</h3>
+               <p>
+                  Cover / discover your letter:<br>
+                  Lets users discover or hide their text-input. 
+               </p>
+               <div>
+                  <p>
+                     Clear text:<br>
+                     Lets users clear the screen and their inputted text to start afresh. 
+                  </p>
+               </div>
+               <div>
+                  <p>
+                     Download your letter:<br>
+                     This function translates the marks created with SVG lines to a downloadable png.
+                  </p>
+               </div>
+               <div>
+                  <p>
+                     Gradient progression:<br>
+                     With every key pressed, the line’s hex value progresses and gradually shifts the color of the drawing. This feature is a time indicator, allowing readers to try to decrypt the image and figure out which words were typed.
+                  </p>
+               </div>
+            </div>
+         </article>
+         <article>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example1.png" />
+               </figure>
+            </div>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example2.png" />
+               </figure>
+            </div>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example3.png" />
+               </figure>
+            </div>
+            <div class="three-columns clear">
+               <figure>
+                  <img src="../assets/images/DMAL_example4.png" />
+               </figure>
+            </div>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example5.png" />
+               </figure>
+            </div>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example8.png" />
+               </figure>
+            </div>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example7.png" />
+               </figure>
+            </div>
+            <div class="three-columns">
+               <figure>
+                  <img src="../assets/images/DMAL_example6.png" />
+                  <figcaption class="hide-at-desktop">Examples</figcaption>
+               </figure>
+            </div>
+         </article>
+         <article>
+            <div class="six-columns">
+               <h3>A visual diary</h3>
+               <p>
+                  I wanted to have some fun with my new tool, so I collected my visual diary entries and created a little book showing the texts next to their encrypted images. For the cover I printed a keyboard-jacket printed on silver paper that can be unfolded and used to try to decrypt the messages.
+               </p>
+            </div>
+            <div class="five-columns shift-one clear">
+               <figure>
+                  <img src="../assets/images/DMAL-floatingbook.png"/>
+               </figure>
+            </div>
+         </article>
+         <article>
+            <div class="twelve-columns">
+               <figure>
+                  <img src="../assets/images/DMAL-10.jpg"/>
+               </figure>
+            </div>
+            <div class="six-columns">
+               <figure>
+                  <img src="../assets/images/DMAL-8.jpg"/>
+               </figure>
+            </div>
+            <div class="six-columns clear">
+               <figure>
+                  <img src="../assets/images/DMAL-9.jpg"/>
+               </figure>
+            </div>
+         </article>
+      </section>
+      <section class="other-featured">
+         <article>
+            <h2>more selected projects</h2>
+            <div class="four-columns">
+               <a href="./exquisite-corpse">
+                  <figure>
+                     <img src="../assets/images/EC-logo2.gif"/>
+                     
+                  </figure>
+                  <p>Exquisite Corpse</p>
+               </a>
+            </div>
+            <div class="four-columns">
+               <a href="./artificial-art">
+                  <figure>
+                     <img src="../assets/images/ArtificialArt-inBrowser.gif"/>
+                  </figure>
+                  <p>Artificial Art</p>
+               </a>
+            </div>
+            <div class="four-columns">
+               <a href="./anti-alias-regular">
+                  <figure>
+                     <div id="AAText"></div>
+                  </figure>
+                  <p>Anti Alias Regular</p>
+               </a>
+            </div>
+         </article>
+      </section>
+      <section class="all-other" id="projects"></section>
+   </main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>
