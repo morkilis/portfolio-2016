@@ -1,5 +1,7 @@
 "use strict";
+
 const Backbone = require('backbone');
+const Wreqr = require('backbone.wreqr');
 const Marionette = require('backbone.marionette');
 const app = new Marionette.Application();
 
