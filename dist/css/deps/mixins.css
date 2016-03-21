@@ -1,0 +1,181 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+}/*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/.fade-in {
+  opacity: 0;
+ /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+ /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+ /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
+.fade-out {
+  opacity: 1;
+  -webkit-animation: fadeOut ease-in 1;
+  animation: fadeOut ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}/*
+@keyframes changeLetters {
+  0% {
+    content: "A";
+  }
+  4% {
+    content: "B";
+  }
+  8% {
+    content: "C";
+  }
+  12% {
+    content: "D";
+  }
+  16% {
+    content: "E";
+  }
+  20% {
+    content: "F";
+  }
+  24% {
+    content: "G";
+  }
+  28% {
+    content: "H";
+  }
+  32% {
+    content: "I";
+  }
+  36% {
+    content: "J";
+  }
+  40% {
+    content: "K";
+  }
+  44% {
+    content: "L";
+  }
+  48% {
+    content: "M";
+  }
+  52% {
+    content: "N";
+  }
+  56% {
+    content: "O";
+  }
+  60% {
+    content: "P";
+  }
+  64% {
+    content: "Q";
+  }
+  68% {
+    content: "R";
+  }
+  72% {
+    content: "S";
+  }
+  75% {
+    content: "T";
+  }
+  78% {
+    content: "U";
+  }
+  81% {
+    content: "V";
+  }
+  85% {
+    content: "W";
+  }
+  89% {
+    content: "X";
+  }
+  92% {
+    content: "Y";
+  }
+  96% {
+    content: "Z";
+  }
+  100% {
+    content: "A";
+  }
+}*//*
+==============================================================================================
+==============================================================================================
+break-points-mixins
+*/@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes soundColor {
+  0% {
+    color: #105AFF;
+  }
+
+  50% {
+    color: #0033A3;
+  }
+
+  100% {
+    color: #105AFF;
+  }
+}
+
+@keyframes soundColor {
+  0% {
+    color: #105AFF;
+  }
+
+  50% {
+    color: #0033A3;
+  }
+
+  100% {
+    color: #105AFF;
+  }
+}

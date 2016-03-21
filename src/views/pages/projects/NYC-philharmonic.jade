@@ -1,0 +1,30 @@
+extends ../../layouts/project.jade
+block content
+  main.project-page
+    header
+      ul
+        li 12:34pm  
+        li
+          a(href='../index.html') Other Projects
+        li   |  Partly Cloudy
+    section.other-projects
+      .title-teaser
+        h1 NYC Philharmonic Open Rehearsals
+        h3
+          | A low-budget multi-page poster system inviting people to watch the fascinating process of the NY philharmonic rehearsal.
+      article
+        figure.featured-image
+          img(src='/images/NYPhil.gif')
+        .five-columns
+          p
+            | Each page in the poster shows a different typographic attempt to communicate the same content. When combined together, the poster behaves like an orchestra: its parts amplify the message in unison.
+        .six-columns.shift-one.clear
+          figure
+            img(src='/images/NYPhil1.jpg')
+        div
+          figure
+            img(src='/images/NYPhil4.jpg')
+          figure
+            img(src='/images/NYPhil2.jpg')
+          figure
+            img(src='/images/NYPhil3.jpg')

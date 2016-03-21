@@ -1,0 +1,120 @@
+extends ../../layouts/project
+block content
+  main.project-page
+    header
+      ul
+        li 12:34pm  
+        li
+          a(href='../index.html') Selected Projects
+        li   |  Partly Cloudy
+    section.AAI
+      .title-teaser
+        h1 Artificial Art
+        h3
+          | An artistic intervention within Amazon’s Mechanical Turk that presents traces of online labor, while working within the confines of the service’s privacy policy and terms of use.
+      article
+        figure.featured-image
+          img(src='/images/AAI_book.jpg')
+        .six-columns
+          h3 Artificial artificial intelligence & online labor
+          p
+            | At this moment in time, tools such as Mechanical Turk are on the verge of being “locked-in”, permanently fixing the way we apprach the global marketplace and workforce. Once designs become locked in, it becomes challenging to break free from the established modes of thinking they have fostered.
+          p
+            | In the case of the web platform Mechanical Turk, people underpay other people to do creatively stagnating, mechanical work online. The tasks posted on the site usually range from image tagging to information collection and data verification, and often pay between $1-$5 per task. The site's promotion of standardized thinking about human intelligence and labor actively demands that people reduce their existence to automated, faceless selves.
+          p
+            | Artificial Art intervenes within Amazon’s already-established platform and takes advantage of one of the service’s most critical workarounds: endorsing cheap human workers from across the globe to execute tasks that computers should be able to do but can’t yet — hence MTurk's quirky tagline: Artificial Artificial Intelligence. The project is divided into three parts: the Human Intelligence Task Generator, the catalog, and the exhibition, all of which explore the work created by the anonymous workers commissioned via Mechanical Turk.
+          //
+            Yet this collection of work is unusual; each drawing reflects a worker’s response to an automated task-generator, an algorithm programmed to construct random drawing instructions for every worker to carry out. In this case, the logic behind the instructions is artificial, however the workers’ results celebrate what it means to be human.
+            Artificial Art presents traces of online labor, while working within the confines of Mechanical Turk’s privacy policy and terms of use. The featured “artists” hold a unique Worker ID but remain anonymous, unless they wish to reveal their identity. Through this absurd exhibition their work becomes an elevated artifact and is offered for sale through a silent auction which will begin at 8pm. Viewers are encouraged to participate in the public auction and bid an amount for drawings they wish to own.
+            question and to rethink about the responsibility that the tools we create carry in the creation of new social and cultural sensibilities.
+        .five-columns.shift-one
+          figure
+            img(src='/images/MTurk-logo.png')
+            figcaption Amazon’s Mechanical Turk logo & tagline
+          figure
+            img(src='/images/MTurk-og.jpg')
+            figcaption
+              | Illustration of an original “Turk”, or “Automaton Chess Player.”: a fake chess-playing machine constructed in the late 18th century that allowed a human chess master to hide inside the machine to operate it and play against genuine humans
+      article
+        .five-columns
+          figure
+            a(href='http://www.maurannstein.com/Hello', target='_blank')
+              img(src='/images/AAI-hello.gif')
+          p
+            a(href='http://www.maurannstein.com/Hello', target='_blank') Visit the HIT Generator
+        .six-columns.shift-one
+          h3 The Human Intelligence Task Generator
+          p
+            | The first part of the project began with an experiemnt: I wanted to see how workers respond to unconventional tasks that require the worker's use of creativitey and a true non-artificial intelligence. I wanted to flip the roles MTurk suggests: instead of being one of the people who commission other people to carry out uninspiring robotic tasks, I decided to build an algoithm that will generate thousands of randomized drawing instructions for every worker to work on. In this case, the logic behind the instructions is artificial, automatic, however the workers’ results celebrate what it means to be human.
+          p
+            | The HIT Generator
+            span *
+            |  is written in javacript and is presented as a website. When I posted my task to Mechanical Turk's interface, I simply asked workers to follow the link that leads to the HIT Generator and send me their drawing results along with a copy of their given instructions. Since the HIT Generator generate different instructions with every refresh of the page, I wanted to have a copy of the instructions that workers received and carried out. So in order to make this process easier for my workers I included a feature on the website that allows every visitor to get a copy of the instructions as a png image.
+          p.unindent
+            span *
+            | In Mechanical Turk, every task is referred to as a
+            i HIT
+            |  - Human Intelligence Task.
+            br
+            | I decided to use MTurk's terminology and called my algorithm website the HIT Generator.
+      article
+        .eight-columns.center
+          h3 The Catalog
+          p
+            | The second part of the project is a book documenting all of the work sent to me by my workers - drawings which were created in response to the HIT Generator.
+        .six-columns
+          figure
+            img(src='/images/AAI-catalog3.jpg')
+        .six-columns.clear
+          figure
+            img(src='/images/AAI-catalog2.jpg')
+        .four-columns
+          figure
+            img(src='/images/AAI-catalog1.jpg')
+        .four-columns
+          figure
+            img(src='/images/AAI-catalog5.jpg')
+        .four-columns.clear
+          figure
+            img(src='/images/AAI-catalog4.jpg')
+        .six-columns
+          figure
+            img(src='/images/AAI1.jpg')
+        .five-columns.shift-one
+          h3 Cover & jacket
+          p
+            | For the cover, I placed my collected instructions in a dense frid, front and back. I then created a jacket for the book; it holds the HIT Generator's underlying mechanism and exposes the arrays of strings used to generate the random instructions.
+      article
+        .five-columns
+          h3 Typography
+          p
+            | I decided to use Lora Regular for all the automated processes (HIT Generator) and the instances that refer to AI. I love this typeface because it’s super legible and its beautiful curves and serifs make it approachable and warm. The strange pairing with any automated content brings back the discussion about artificial humanness.
+          p
+            | I continued with this line of thinking (flipping the roles of artificial and artificial-artificial, or to avoid this confusion: human and machine), and decided to set the rest of the text, which was not automatically generated,  in a san-serif. I chose Basis Grotesque Bold because of its rigidity — the opposite from Lora — and the sense of stiffness it gives readers.
+        .six-columns.shift-one
+          figure
+            h3.AAI-type.lora Hello world
+            figcaption Lora Normal (Google Font)
+          figure
+            h3.AAI-type.basis Hey there
+            figcaption Basis Grotwsque Bold (Colophon)
+      article
+        .six-columns
+          figure
+            img(src='/images/AAI_1200px.gif')
+        .five-columns.shift-one
+          h3 Exhibition & live auction
+          p
+            | This part is still in development, and in case anyone is actually reading this — you are invited to take part in the last part of my project: On April 3rd I will be exhibiting the work done by my anonymous workers at Rabbithole Projects (33 Washington St. Brooklyn, NY) and selling it at a live auction at the end of the event.
+          div
+            h3 Microsite
+            p
+              | The first step I took before starting to promote the exhibtion was to simplify the name of my progect: I shortened "Artificial Artificial Inteligence" to “Artificial Art”, and then I designed and programmed a microsite to promote the event. I wanted to keep it simple, but with a few magical moments that will make people want to see more of what’s planned.
+            div
+              p
+                a(href='http://www.artificialart.net', target='_blank') Visit Artificial Art microsite
+      article
+        div
+          figure
+            a(href='http://www.artificialart.net', target='_blank')
+              img(src='/images/AAI_microsite.gif', style='border: 1px solid #EFEDEA;')

@@ -1,0 +1,23 @@
+{
+  "name": "landing-page-new",
+  "version": "0.0.1",
+  "homepage": "https://github.com/getjaco/new-landing-page",
+  "authors": [
+    "BlueHotDog <dannifriedland@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/scripts/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4"
+  }
+}

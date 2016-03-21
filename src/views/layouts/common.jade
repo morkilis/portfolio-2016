@@ -1,0 +1,33 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='')
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8(lang='')
+//if IE 8
+  html.no-js.lt-ie9(lang='')
+// [if gt IE 8] <!
+html.no-js(lang='')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(itemprop="image", content="/images/share-image.png")
+    title Maurann Stein
+    meta(name='description', content='jaco provides actionable visual insights for product owners')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
+    link(rel='apple-touch-icon', href='/images/favicon.ico', type="image/x-icon")
+    link(rel="icon",href="/images/favicon.ico", type="image/x-icon")
+    link(rel="shortcut icon",href="/images/favicon.ico", type="image/x-icon")
+    //smoosh
+    link(rel='stylesheet', href='/css/manifest.css')
+    block styles
+    block head_scripts
+    //endsmoosh
+  body
+    block content
+    block bottom
+      include ../pages/common/all_other.jade
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="/scripts/vendor/jquery.js"><\\/script>')
+    block scripts

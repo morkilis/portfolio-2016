@@ -1,0 +1,460 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400);
+
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+}/*! normalize.css v2.0.1 | MIT License | git.io/normalize *//* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== *//*
+ * Corrects `block` display not defined in IE 8/9.
+ */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
+  display: block;
+}/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */audio,canvas,video {
+  display: inline-block;
+}/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */audio:not([controls]) {
+  display: none;
+  height: 0;
+}/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */[hidden] {
+  display: none;
+}/* ==========================================================================
+   Base
+   ========================================================================== *//*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */html {
+  font-family: sans-serif;
+ /* 1 */
+  -webkit-text-size-adjust: 100%;
+ /* 2 */
+  -ms-text-size-adjust: 100%;
+ /* 2 */;
+}/*
+ * Removes default margin.
+ */body {
+  margin: 0;
+}/* ==========================================================================
+   Links
+   ========================================================================== *//*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */a:focus {
+  outline: thin dotted;
+}/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */a:active,a:hover {
+  outline: 0;
+}/* ==========================================================================
+   Typography
+   ========================================================================== *//*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */h1 {
+  font-size: 2em;
+}/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */abbr[title] {
+  border-bottom: 1px dotted;
+}/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */b,strong {
+  font-weight: bold;
+}/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */dfn {
+  font-style: italic;
+}/*
+ * Addresses styling not present in IE 8/9.
+ */mark {
+  background: #ff0;
+  color: #000;
+}/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */code,kbd,pre,samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}/*
+ * Improves readability of pre-formatted text in all browsers.
+ */pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}/*
+ * Sets consistent quote types.
+ */q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */small {
+  font-size: 80%;
+}/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */sub,sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}/* ==========================================================================
+   Embedded content
+   ========================================================================== *//*
+ * Removes border when inside `a` element in IE 8/9.
+ */img {
+  border: 0;
+}/*
+ * Corrects overflow displayed oddly in IE 9.
+ */svg:not(:root) {
+  overflow: hidden;
+}/* ==========================================================================
+   Figures
+   ========================================================================== *//*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */figure {
+  margin: 0;
+}/* ==========================================================================
+   Forms
+   ========================================================================== *//*
+ * Define consistent border, margin, and padding.
+ */fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */legend {border: 0; /* 1 */padding: 0; /* 2 */}/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */button,input,select,textarea {font-family: inherit; /* 1 */font-size: 100%; /* 2 */margin: 0; /* 3 */}/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */button,input {line-height: normal;}/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button; /* 2 */cursor: pointer; /* 3 */}/*
+ * Re-set default cursor for disabled elements.
+ */button[disabled],input[disabled] {cursor: default;}/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */input[type="checkbox"],input[type="radio"] {box-sizing: border-box; /* 1 */padding: 0; /* 2 */}/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */input[type="search"] {-webkit-appearance: textfield; /* 1 */ /* 2 */box-sizing: content-box;}/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}/*
+ * Removes inner padding and border in Firefox 4+.
+ */button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0;}/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */textarea {overflow: auto; /* 1 */vertical-align: top; /* 2 */}/* ==========================================================================
+   Tables
+   ========================================================================== *//*
+ * Remove most spacing between table cells.
+ */table {border-collapse: collapse;border-spacing: 0;}/*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/html {box-sizing: border-box;}*,*::after,*::before {box-sizing: inherit;}/*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/.fade-in {opacity: 0; /* make things invisible upon start */-webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */animation: fadeIn ease-in 1;-webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/animation-fill-mode: forwards;-webkit-animation-duration: 0.4s;animation-duration: 0.4s;}.fade-out {opacity: 1;-webkit-animation: fadeOut ease-in 1;animation: fadeOut ease-in 1;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;-webkit-animation-duration: 0.4s;animation-duration: 0.4s;}/*
+@keyframes changeLetters {
+  0% {
+    content: "A";
+  }
+  4% {
+    content: "B";
+  }
+  8% {
+    content: "C";
+  }
+  12% {
+    content: "D";
+  }
+  16% {
+    content: "E";
+  }
+  20% {
+    content: "F";
+  }
+  24% {
+    content: "G";
+  }
+  28% {
+    content: "H";
+  }
+  32% {
+    content: "I";
+  }
+  36% {
+    content: "J";
+  }
+  40% {
+    content: "K";
+  }
+  44% {
+    content: "L";
+  }
+  48% {
+    content: "M";
+  }
+  52% {
+    content: "N";
+  }
+  56% {
+    content: "O";
+  }
+  60% {
+    content: "P";
+  }
+  64% {
+    content: "Q";
+  }
+  68% {
+    content: "R";
+  }
+  72% {
+    content: "S";
+  }
+  75% {
+    content: "T";
+  }
+  78% {
+    content: "U";
+  }
+  81% {
+    content: "V";
+  }
+  85% {
+    content: "W";
+  }
+  89% {
+    content: "X";
+  }
+  92% {
+    content: "Y";
+  }
+  96% {
+    content: "Z";
+  }
+  100% {
+    content: "A";
+  }
+}*//*
+==============================================================================================
+==============================================================================================
+break-points-mixins
+*//*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/html {box-sizing: border-box;}*,*::after,*::before {box-sizing: inherit;}/*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/.fade-in {opacity: 0; /* make things invisible upon start */-webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */animation: fadeIn ease-in 1;-webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/animation-fill-mode: forwards;-webkit-animation-duration: 0.4s;animation-duration: 0.4s;}.fade-out {opacity: 1;-webkit-animation: fadeOut ease-in 1;animation: fadeOut ease-in 1;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;-webkit-animation-duration: 0.4s;animation-duration: 0.4s;}/*
+@keyframes changeLetters {
+  0% {
+    content: "A";
+  }
+  4% {
+    content: "B";
+  }
+  8% {
+    content: "C";
+  }
+  12% {
+    content: "D";
+  }
+  16% {
+    content: "E";
+  }
+  20% {
+    content: "F";
+  }
+  24% {
+    content: "G";
+  }
+  28% {
+    content: "H";
+  }
+  32% {
+    content: "I";
+  }
+  36% {
+    content: "J";
+  }
+  40% {
+    content: "K";
+  }
+  44% {
+    content: "L";
+  }
+  48% {
+    content: "M";
+  }
+  52% {
+    content: "N";
+  }
+  56% {
+    content: "O";
+  }
+  60% {
+    content: "P";
+  }
+  64% {
+    content: "Q";
+  }
+  68% {
+    content: "R";
+  }
+  72% {
+    content: "S";
+  }
+  75% {
+    content: "T";
+  }
+  78% {
+    content: "U";
+  }
+  81% {
+    content: "V";
+  }
+  85% {
+    content: "W";
+  }
+  89% {
+    content: "X";
+  }
+  92% {
+    content: "Y";
+  }
+  96% {
+    content: "Z";
+  }
+  100% {
+    content: "A";
+  }
+}*//*
+==============================================================================================
+==============================================================================================
+break-points-mixins
+*/body {color: #404040;font-family: Basis-Grotesque-Bold, Helvetica, sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}header,p,a,ul,aside,figcaption {font-size: 15px;line-height: 19px;}p {text-indent: 40px;}p:first-of-type,p.unindent {text-indent: 0;}p:last-of-type {margin-bottom: 40px;}p > span {color: #105AFF;font-size: 18px;font-family: courier;}p.unindent {font-size: 12px;line-height: 15px;}h1 {font-size: 60px;line-height: 58px;letter-spacing: -1.8px;text-align: center;}h1 span {color: #105AFF;cursor: pointer;}h2 {font-size: 22px;line-height: 34px;letter-spacing: 0.5px;text-transform: uppercase;margin-top: 0;}h3 {font-size: 20px;line-height: 24px;margin: 40px 0 24px 0;color: black;}h3.visitsite > a {font-size: 20px;line-height: 24px;}header a {color: #404040;border-bottom: none;}header a:hover {border-bottom: none;}a {text-decoration: none;color: #105AFF;border-bottom: 1px dashed #105AFF;}a:hover {border-bottom: 1px solid #105AFF;}a.readmore {border: 1px dashed #105AFF;border-radius: 2px;padding: 10px;}a.readmore:hover {border: 1px solid #105AFF;}#AAText {font-family: Anti-Alias;color: black;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-size: 940px;line-height: 114px;overflow: hidden;height: 488px;}#AAText:after {-webkit-animation: changeLetters 26s linear infinite;animation: changeLetters 26s linear infinite;-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */animation-delay: 1s;content: "A";}.other-featured h2 {margin-bottom: 100px;}.other-featured a {color: #404040;}.other-featured #AAText {font-size: 320px;line-height: 32px;height: 163px;}.other-featured #AAText:after {-webkit-animation: none;animation: none;}#skipTo {cursor: pointer;}/*
+.AAR {
+   #AAText {
+    font-size: 700px;
+    line-height: 90px;
+    text-align: right;
+    @include at-mobile {
+      text-align: center;
+    }
+ }
+}*/.AAI .AAI-type {margin-top: 12px;font-size: 80px;line-height: 50px;letter-spacing: -4px;}.AAI .AAI-type.lora {font-weight: 400;font-family: 'Lora', serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}ul {list-style: none;padding: 0;}section ul,section ul a {color: #A2CFFF;opacity: 0.8;padding: 12px 0;}span > a {color: inherit;cursor: pointer;}span > a:hover,section ul a:hover,.similar-media {color: white;opacity: 1;transition: all 300ms;letter-spacing: 0.3px;}.all-other li:hover {background-color: rgba(144, 195, 212, 0.1);transition: all 300ms;}a:hover,a:active,a:focus {outline: none;}aside {font-weight: 400;font-family: 'Lora', serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-style: italic;color: #404040;opacity: 0.9;text-indent: -6px;margin: 0 50px 0 50px;line-height: 20px;}.number {font-size: 42px;line-height: 84px;color: black;}figcaption {font-size: 12px;line-height: 15px;margin-bottom: 30px;}.all-other span > a {transition: all 300ms;cursor: default;}html {box-sizing: border-box;}*,*::after,*::before {box-sizing: inherit;}html {box-sizing: border-box;}*,*::after,*::before {box-sizing: inherit;}/*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/.fade-in {opacity: 0; /* make things invisible upon start */-webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */animation: fadeIn ease-in 1;-webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/animation-fill-mode: forwards;-webkit-animation-duration: 0.4s;animation-duration: 0.4s;}.fade-out {opacity: 1;-webkit-animation: fadeOut ease-in 1;animation: fadeOut ease-in 1;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;-webkit-animation-duration: 0.4s;animation-duration: 0.4s;}/*
+@keyframes changeLetters {
+  0% {
+    content: "A";
+  }
+  4% {
+    content: "B";
+  }
+  8% {
+    content: "C";
+  }
+  12% {
+    content: "D";
+  }
+  16% {
+    content: "E";
+  }
+  20% {
+    content: "F";
+  }
+  24% {
+    content: "G";
+  }
+  28% {
+    content: "H";
+  }
+  32% {
+    content: "I";
+  }
+  36% {
+    content: "J";
+  }
+  40% {
+    content: "K";
+  }
+  44% {
+    content: "L";
+  }
+  48% {
+    content: "M";
+  }
+  52% {
+    content: "N";
+  }
+  56% {
+    content: "O";
+  }
+  60% {
+    content: "P";
+  }
+  64% {
+    content: "Q";
+  }
+  68% {
+    content: "R";
+  }
+  72% {
+    content: "S";
+  }
+  75% {
+    content: "T";
+  }
+  78% {
+    content: "U";
+  }
+  81% {
+    content: "V";
+  }
+  85% {
+    content: "W";
+  }
+  89% {
+    content: "X";
+  }
+  92% {
+    content: "Y";
+  }
+  96% {
+    content: "Z";
+  }
+  100% {
+    content: "A";
+  }
+}*//*
+==============================================================================================
+==============================================================================================
+break-points-mixins
+*//*0.7 opacity for unhighlighted list text*//*for the lines*//*Breakpoint sizes*//*Define your breakpoints*/body {font-size: 0px;vertical-align: top;width: 100%;margin: 0;}header {color: #404040;opacity: 0.7;padding: 12px;position: fixed;width: 100%;top: 0;z-index: 10;}header ul {width: 100%;margin: 0;text-align: center;}header li {display: inline-block;}#maurann {transition: all 300ms;}.active {color: #0033A3;letter-spacing: -0.8px;}section {width: 100%;}section.all-other {background-color: #105AFF;margin-top: 120px;}div.aboutme {width: 100vw;height: 100vh;background-color: #EFEDEA;}div.aboutme > div {max-width: 68em;margin-left: auto;margin-right: auto;width: 100%;height: 100%;max-width: 835px;}div.aboutme > div::after {clear: both;content: "";display: table;}div.aboutme h1 {width: 100%;top: 50%;position: relative;margin-top: -200px;}article {max-width: 68em;margin-left: auto;margin-right: auto;width: 100%;max-width: 1024px;padding-top: 180px;}article::after {clear: both;content: "";display: table;}article:last-of-type {padding-bottom: 180px;}.video-mask {border-radius: 20px;position: absolute;margin-top: -370px;right: 5px;width: 210px;height: 438px;overflow: hidden;}.video-mask video {width: 300px;height: auto;margin-left: -48px;margin-top: -5px;}#comp-content {-webkit-transform: matrix3d(0.95, 0.06964, 0, 0.00099, 0.32, 1.2479, 1, -0.00006, 1, 0, 1, 0, 67, 56, 0, 1);transform: matrix3d(0.95, 0.06964, 0, 0.00099, 0.32, 1.2479, 1, -0.00006, 1, 0, 1, 0, 67, 56, 0, 1);position: absolute;outline: 1px solid transparent;width: 240px;height: auto;z-index: -1; /* @include at-nav-min {
+    transform: matrix3d(0.95, 0.06964, 0, 0.0007, 0.32, 1.2479, 1, -0.00006, 1, 0, 1, 0, 58, 110, 0, 1);
+    width: 238px;
+  }
+  @include at-tablet {
+    transform: matrix3d(0.95, 0.06964, 0, 0.0007, 0.32, 1.2479, 1, -0.00006, 1, 0, 1, 0, 53, 101, 0, 1);
+    width: 174px;
+  }*/}section li {border-top: 1px solid #3272FF;padding: 12px 0;position: relative;}section li:last-of-type {border-bottom: 1px solid #3272FF;}.all-other span {position: absolute;right: 0;}footer {background-color: #0033A3;width: 100%;padding: 20px;color: #A2CFFF;}footer > div {max-width: 68em;margin-left: auto;margin-right: auto;max-width: 1024px;}footer > div::after {clear: both;content: "";display: table;}footer article {display: -webkit-inline-flex;display: -ms-inline-flexbox;display: inline-flex;margin: 0;padding: 0;}footer article:last-of-type {padding: 0;}footer article p {width: 50%;margin: 0;}footer article p:last-of-type {text-align: right;margin: 0;}footer article p a {color: inherit;border-bottom: none;}footer article p a:hover {border-bottom: none;}.project-page .title-teaser {width: 100%;max-width: 1024px;position: relative;margin: 0 auto;margin-top: 120px;}.project-page .title-teaser h3 {width: 60%;margin: -20px auto;text-align: center;}.project-page .title-teaser h3.visitsite {margin-bottom: 30px;}.project-page article {padding-top: 160px; /*    img {
+      width: 100%;
+      height: auto;
+    }*/}.project-page article:first-of-type {padding-top: 110px;}.project-page article h3 {margin-top: 0;}.project-page .center {margin-left: 17.05961%;text-align: center;margin-bottom: 40px;}.project-page .other-projects p:first-of-type {margin-top: -3px;}.project-page .all-other {margin-top: 40px;}.EC .gif-example {width: 100%;height: 170px;margin-bottom: 30px;background-repeat: no-repeat;position: relative;margin: 0 auto;}.EC .gif-example#ie-scroll {background-image: url(../images/window-scroll2.gif);background-position: 50% 65%;}.EC .gif-example#ie-rounds {background-image: url(../images/round-selection2.gif);background-position: 50% 0;}.EC .gif-example#ie-timer {background-image: url(../images/timer2.gif);background-position: 50% 40%;}.EC img.app-view {width: 200px;height: auto;margin-bottom: 12px;}.EC img.flow-diagram {width: 80%;height: auto;}.bullet {text-align: center;padding: 0 15px;}.website-video {position: relative;}.website-video img {position: absolute;}.website-video video {width: 100%;height: auto;margin-top: 28px;z-index: -1;}figure {margin-bottom: 30px;}figure img {margin-bottom: 20px;width: 100%;height: auto;}figure.featured-image {margin-bottom: 100px;}.twin {margin-bottom: 0px;}.other-featured {text-align: center;}.other-featured article {border-top: 1px solid #105AFF;padding: 40px 0 0 0;}.other-featured h2 {margin: 0 0 60px 0;}.other-featured figure > img {height: auto;width: auto;max-width: 95%;max-height: 163px;}.other-featured p {margin-top: 30px;}.other-featured #comp-content {-webkit-transform: matrix3d(0.95, 0.03, 0, 0.0015, 0.31, 1.21, 1, -0.00015, 1, 0, 1, 0, 31, 25, 0, 1);transform: matrix3d(0.95, 0.03, 0, 0.0015, 0.31, 1.21, 1, -0.00015, 1, 0, 1, 0, 31, 25, 0, 1);width: 135px;}.all-other article {padding: 120px 0 110px 0;}.all-other span {display: inline-block;}.youtube-wrapper {position: relative;padding-bottom: 56.25%; /* 16:9 */padding-top: 25px;height: 0;}.youtube-wrapper iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}.art-page figure {margin-bottom: 100px;text-align: left;}/*========================================
+==========================================
+                 HELPERS
+==========================================
+========================================*/.one-column {float: left;display: block;margin-right: 2.35765%;width: 6.17215%;}.one-column:last-child {margin-right: 0;}.two-columns {float: left;display: block;margin-right: 2.35765%;width: 14.70196%;}.two-columns:last-child {margin-right: 0;}.three-columns {float: left;display: block;margin-right: 2.35765%;width: 23.23176%;}.three-columns:last-child {margin-right: 0;}.four-columns {float: left;display: block;margin-right: 2.35765%;width: 31.76157%;}.four-columns:last-child {margin-right: 0;}.five-columns {float: left;display: block;margin-right: 2.35765%;width: 40.29137%;}.five-columns:last-child {margin-right: 0;}.six-columns {float: left;display: block;margin-right: 2.35765%;width: 48.82117%;}.six-columns:last-child {margin-right: 0;}.seven-columns {float: left;display: block;margin-right: 2.35765%;width: 57.35098%;}.seven-columns:last-child {margin-right: 0;}.eight-columns {float: left;display: block;margin-right: 2.35765%;width: 65.88078%;}.eight-columns:last-child {margin-right: 0;}.nine-columns {float: left;display: block;margin-right: 2.35765%;width: 74.41059%;}.nine-columns:last-child {margin-right: 0;}.twelve-columns {float: left;display: block;margin-right: 2.35765%;width: 100%;}.twelve-columns:last-child {margin-right: 0;}.shift-one {margin-left: 8.5298%;}p.clear {clear: both;}.clear {margin-right: 0;}.hidden {display: none;}.hide-at-desktop {display: none;}.hide-at-tablet {display: block;}@font-face {font-family:Basis-Grotesque-Bold;src:url(../fonts/basis_grotesque_bold.otf);}@font-face {font-family:Anti-Alias;src:url(../fonts/Anti-Alias-Regular.otf);}@media screen and (max-width: 1024px) {section {padding: 10px;}}@media screen and (max-width: 768px) {h1 {font-size: 42px;line-height: 37px;letter-spacing: -1.8px;}h2 {text-align: center;margin-top: 20px;}h3 {margin-top: 20px;}div.aboutme > div {max-width: 430px;}div.aboutme h1 {margin-top: -170px;}article {padding-top: 60px;margin-bottom: 50px;max-width: 430px;}article:first-of-type {padding-top: 100px;}article > div {margin-bottom: 40px;}article:last-of-type {padding-bottom: 0;}footer > div {max-width: 430px;}.project-page .title-teaser h3 {width: 90%;margin: 0px auto;}.project-page .title-teaser h3.visitsite {margin-bottom: 20px;}.project-page .title-teaser {max-width: 430px;}.project-page article {padding-top: 0px;}.project-page .center {margin-left: 0;}.EC img.app-view {left: 50%;margin-left: -100px;position: relative;}.EC img.flow-diagram {width: 100%;}figure.featured-image {margin-bottom: 30px;}.all-other article {padding: 80px 0 20px 0 !important;}.all-other span {display: none;}.two-columns {margin-right: 0;width: 100%;}.three-columns {margin-right: 0;width: 100%;}.four-columns {margin-right: 0;width: 100%;}.five-columns {margin-right: 0;width: 100%;}.six-columns {margin-right: 0;width: 100%;}.seven-columns {margin-right: 0;width: 100%;}.eight-columns {margin-right: 0;width: 100%;}.nine-columns {margin-right: 0;width: 100%;}.twelve-columns {margin-right: 0;width: 100%;}.shift-one {margin-left: 0%;margin-left: 0;}.hide-at-desktop {display: block;}.hide-at-tablet {display: none;}}@media screen and (max-width: 540px) {h1 {font-size: 30px;line-height: 27px;letter-spacing: -1.8px;}div.aboutme > div {max-width: 80%;}div.aboutme h1 {margin-top: -150px;}.all-other article {padding-bottom: 10px;}}@-webkit-keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@-webkit-keyframes fadeOut {from {opacity: 1;}to {opacity: 0;}}@keyframes fadeOut {from {opacity: 1;}to {opacity: 0;}}@-webkit-keyframes soundColor {0% {color: #105AFF;}50% {color: #0033A3;}100% {color: #105AFF;}}@keyframes soundColor {0% {color: #105AFF;}50% {color: #0033A3;}100% {color: #105AFF;}}@-webkit-keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@-webkit-keyframes fadeOut {from {opacity: 1;}to {opacity: 0;}}@keyframes fadeOut {from {opacity: 1;}to {opacity: 0;}}@keyframes soundColor {0% {color: #105AFF;}50% {color: #0033A3;}100% {color: #105AFF;}}@-webkit-keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@-webkit-keyframes fadeOut {from {opacity: 1;}to {opacity: 0;}}@keyframes fadeOut {from {opacity: 1;}to {opacity: 0;}}@keyframes soundColor {0% {color: #105AFF;}50% {color: #0033A3;}100% {color: #105AFF;}}

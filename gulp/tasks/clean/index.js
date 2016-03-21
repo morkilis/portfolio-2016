@@ -1,0 +1,9 @@
+'use strict';
+var gulp = require('gulp');
+
+gulp.task('clean', function() {
+  var del = require('del');
+  var paths = require('../paths');
+
+  return del([paths.dest]);
+});
