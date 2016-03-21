@@ -8,7 +8,7 @@
   transform: translate(0px, 0px);
   .top-navigation {
     display: flex;
-    .current-time, .current-weather, .current-section {
+    .current-time, .current-weather, .current-section, .seperator {
       padding-right: 5px;
     }
   }

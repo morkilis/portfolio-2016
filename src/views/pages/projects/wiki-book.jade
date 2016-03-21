@@ -2,11 +2,7 @@ extends ../../layouts/project.jade
 block content
   main.project-page
     header
-      ul
-        li 12:34pm  
-        li
-          a(href='../index.html') Other Projects
-        li   |  Partly Cloudy
+      include ../common/top_navigation
     section.other-projects
       .title-teaser
         h1 Wikipedia Book
@@ -14,10 +10,10 @@ block content
           | The content of this book was taken from the Wikipedia page “2013 Global Surveillance Disclosures” on December 2013.
       article
         figure.featured-image
-          img(src='/images/WB-2.jpg')
+          img(src='../assets/images/WB-2.jpg')
         .six-columns
           figure
-            img(src='/images/WB-1.png')
+            img(src='../assets/images/WB-1.png')
         .six-columns.clear
           p
             | Every link in the article on Wikipedia (“2013 Global Surveillance Disclosures”) is blackened out in my book, and can be seen on the corresponding urls written in the beginnig of every chapter.
@@ -36,8 +32,8 @@ block content
             a(target='_blank', href='http://maurannstein.com/list_of_americans_under_surveillance.html') Chapter 6
         div
           figure
-            img(src='/images/WB-6.png')
+            img(src='../assets/images/WB-6.png')
           figure
-            img(src='/images/WB-5.png')
+            img(src='../assets/images/WB-5.png')
           figure
-            img(src='/images/WB-4.png')
+            img(src='../assets/images/WB-4.png')

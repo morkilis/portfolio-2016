@@ -7,8 +7,8 @@ gulp.task('upload_to_ftp:production', function() {
 
   const conn = ftp.create({
                             host: 'ftp.maurannstein.com',
-                            user: 'mauranns',
-                            password: 'Eshet234@Avinu',
+                            user: process.env.FTP_USERNAME,
+                            password: process.env.FTP_PASS,
                             parallel: 3,
                             log: $.util.log
                           });
