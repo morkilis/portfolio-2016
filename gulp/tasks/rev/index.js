@@ -2,13 +2,13 @@
 
 let gulp = require('gulp');
 
-gulp.task('rev', function () {
+gulp.task('rev', function() {
   let paths = require('../paths');
   let $ = require('gulp-load-plugins')();
-  let revAll = new $.revAll();
+  let revAll = new $.revAll({dontRenameFile: [/^\/.html/g]});
   return gulp.src(`${paths.dest}/**/*.*`)
-    .pipe($.util.env.type === 'development' ? $.util.noop() : revAll.revision())
-    .pipe($.util.env.type === 'development' ? $.util.noop() : gulp.dest(`${paths.dest}`))
-    .pipe($.util.env.type === 'development' ? $.util.noop() : revAll.manifestFile())
-    .pipe($.util.env.type === 'development' ? $.util.noop() : gulp.dest(`${paths.dest}`));
+      .pipe($.util.env.type === 'development' ? $.util.noop() : revAll.revision())
+      .pipe($.util.env.type === 'development' ? $.util.noop() : gulp.dest(`${paths.dest}`))
+      .pipe($.util.env.type === 'development' ? $.util.noop() : revAll.manifestFile())
+      .pipe($.util.env.type === 'development' ? $.util.noop() : gulp.dest(`${paths.dest}`));
 });

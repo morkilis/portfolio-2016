@@ -9,5 +9,5 @@ gulp.task('publish:production', function () {
   gutil.env.type = 'production'; //if there were only a nice way of doing this
   gutil.env.watch = false;
 
-  return runSequence('build', 'upload_to_s3:production', 'cdn:flush');
+  return runSequence('build', 'upload_to_ftp:production');
 });
