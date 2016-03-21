@@ -106,13 +106,13 @@ const TopNavigation = Marionette.ItemView.extend(
         var st = $(window).scrollTop();
 
         // Make sure they scroll more than delta
-        if (Math.abs(this.lastScrollTop - st) <= 20) {
+        if (Math.abs(this.lastScrollTop - st) <= 30) {
           return;
         }
 
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
-        if (st > this.lastScrollTop && st > 20) {
+        if (st > this.lastScrollTop && st > 30) {
           this._hide();
         } else {
           if (st + $(window).height() < $(document).height()) {
