@@ -1,0 +1,130 @@
+extends ../../layouts/featured.jade
+block content
+  main.project-page
+    header
+      include ../common/top_navigation
+    section.DMAL
+      .title-teaser
+        h1 Draw Me A Letter
+        h3.visitsite
+          a(href='http://maurannstein.com/draw-me-a-letter/', target='_blank') Visit site
+          h3
+            h3
+              | A program that creates a map of the hidden gestures resulting from typing on a computer keyboard.
+      article
+        figure.featured-image
+          a.visit-site(target='_blank', href='http://maurannstein.com/draw-me-a-letter/')
+            img(src='/images/DMALGif-in-browser.gif')
+        .five-columns
+          figure
+            img(src='/images/keys-hand-position.png', style='width: 100%; height: auto; margin-bottom: 12px')
+            figcaption
+              | Home position - Hand position for type writing on a QWERTZ keyboard.
+          .six-columns
+            figure.twin
+              img(src='/images/mouse_draw_web.jpg')
+          .six-columns.clear
+            figure.twin
+              img(src='/images/mouse_draw_web2.jpg')
+          figcaption
+            | Jessica Greenfield's
+            i Hidden Gestures
+            | : a collection of drawings showcasing the unseen gestures of designers in a digital design process.
+        .six-columns.shift-one
+          h3
+            | Tracing hidden gestures
+          p
+            | I wanted to create a tool that explores an alternative way to document text typed on the computer. I tried to focus on the visual trace that results from our typing on the keyboard and see if any patterns evolve.
+          p
+            | One aspect I especially love about this project is the way it tracks my mistakes when I type — unlike most digital writing tools. Anytime I hit the backspace, a line is drawn and added to the encrypted image, similar to when I write by hand.
+          div
+            h3 Initial wireframes
+            p
+              | After I developed the basic idea of what I wanted to build, I started to think about its design and how users might approach it. I sketched out a few ideas and came up with a simple interface that puts the user's visual unput at the center.
+            p
+              | I couldn’t really predict what the traces will look like, but while I was working and thinking about it, I realized it could be really cool if I added a feature that will allow my users to download and save their text-drawing. Another functionality I wanted to add was to allow users to view their input in text-form.
+      article
+        .six-columns
+          figure
+            img(src='/images/DMAL-wireframe1.png')
+        .six-columns
+          figure
+            img(src='/images/DMAL-wireframe2.png')
+      article
+        .eight-columns.center
+          h3
+            | Mapping out the keyboard
+        figure
+          img(src='/images/DMAL-keyboard.jpg')
+        .six-columns
+          p
+            | I had to proportionately map out all the keyboard keys in order for the tracking to be accurate. So I created coordinates for every key based on it placement on the keyboard, and later referenced these points in a function that draws lines between two points. This way I was able to update the last typed key as the place to which the line will continue.
+      article
+        .seven-columns
+          figure
+            img(src='/images/DMAL_eyes.gif')
+        .five-columns.clear
+          h3 Features
+          p
+            | Cover / discover your letter:
+            br
+            |                   Lets users discover or hide their text-input.
+          div
+            p
+              | Clear text:
+              br
+              |                      Lets users clear the screen and their inputted text to start afresh.
+          div
+            p
+              | Download your letter:
+              br
+              |                      This function translates the marks created with SVG lines to a downloadable png.
+          div
+            p
+              | Gradient progression:
+              br
+              |                      With every key pressed, the line’s hex value progresses and gradually shifts the color of the drawing. This feature is a time indicator, allowing readers to try to decrypt the image and figure out which words were typed.
+      article
+        .three-columns
+          figure
+            img(src='/images/DMAL_example1.png')
+        .three-columns
+          figure
+            img(src='/images/DMAL_example2.png')
+        .three-columns
+          figure
+            img(src='/images/DMAL_example3.png')
+        .three-columns.clear
+          figure
+            img(src='/images/DMAL_example4.png')
+        .three-columns
+          figure
+            img(src='/images/DMAL_example5.png')
+        .three-columns
+          figure
+            img(src='/images/DMAL_example8.png')
+        .three-columns
+          figure
+            img(src='/images/DMAL_example7.png')
+        .three-columns
+          figure
+            img(src='/images/DMAL_example6.png')
+            figcaption.hide-at-desktop Examples
+      article
+        .six-columns
+          h3 A visual diary
+          p
+            | I wanted to have some fun with my new tool, so I collected my visual diary entries and created a little book showing the texts next to their encrypted images. For the cover I printed a keyboard-jacket printed on silver paper that can be unfolded and used to try to decrypt the messages.
+        .five-columns.shift-one.clear
+          figure
+            img(src='/images/DMAL-floatingbook.png')
+      article
+        .twelve-columns
+          figure
+            img(src='/images/DMAL-10.jpg')
+        .six-columns
+          figure
+            img(src='/images/DMAL-8.jpg')
+        .six-columns.clear
+          figure
+            img(src='/images/DMAL-9.jpg')

@@ -1,0 +1,107 @@
+extends ../layouts/common.jade
+block append scripts
+  script(src='/scripts/pages/index.js')
+block content
+  main.index-page
+    header
+      include common/top_navigation
+    audio.maurann-name-audio(preload='auto')
+      source(src='/music/maurann.mp3', type='audio/mpeg')
+      source(src='/music/maurann.ogg', type='audio/ogg')
+    .aboutme
+      div
+        //- img(src='/images/morenski.png', style='position: absolute; bottom: 0; left: 50%; margin-left: -40px; width: 80px; height: auto;')
+        h1.twelve-columns.clear
+          | Hi there! 
+          br
+          | My name is Maurann and I’m an Israeli designer based in New York. Usually people don’t know how to
+          span.maurann-name &nbsp;pronounce my name
+          |  but that’s okay.
+    section.featured
+      article#EC
+        .seven-columns.hide-at-desktop(style='position: relative; margin-bottom: 100px')
+          img(src='/images/EC-paper.png', style='width:95%')
+          .video-mask
+            video(autoplay='', loop='')
+              source(src='/videos/EC.mp4', type='video/mp4')
+              source(src='/videos/EC.ogg', type='video/ogg')
+              |             Your browser does not support HTML5 video.
+        .five-columns
+          h2 Exquisite Corpse
+          h3
+            | A nod to a technique invented by the surrealists, Exquisite Corpse is a collaborative game app designed for
+            | 3-8 players who are not afraid to be silly.
+          p
+            | With Feras Alnatsheh and Mark Foss, at Parson’s&nbsp;
+            a(href='https://events.newschool.edu/event/design_and_hack_opening_ceremonies_hackathon#.VrUO3jYrJE4', target='_blank').
+              Design & Hack hackathon (we won!)
+            | .&nbsp;If you’re antsy, skip to 1:54 to see the best part.
+          p
+            | It works similarly to the old parlour game called Consequences, in which players write in turn on a sheet of paper, fold it to conceal part of their writing, and then pass it to the next player to add a sentence. The game’s end result is a collaborative (and often funny) narrative.
+          p.
+            We decided to try to hack this old game and translate it to a mobile app. We had to rethink every interaction
+            and invent its UI and UX in order to maintain its intrinsic magic. Instead of the page-folding technique, we
+            used the nature of the phone as a window that reveals just a part of the content, and we added a timer to
+            prompt players to develop the written narrative. The game evolved and turned into a more social and fun
+            activity.
+          a.readmore(href='/projects/exquisite-corpse.html') Read more
+        .six-columns.shift-one.hide-at-tablet(style='position: relative;')
+          img(src='/images/EC-paper.png', style='width: 90%;')
+          .video-mask
+            video#ec-vid(autoplay='', loop='')
+              source(src='/videos/EC.mp4', type='video/mp4')
+              source(src='/videos/EC.ogg', type='video/ogg')
+              |             Your browser does not support HTML5 video.
+      article#DMAL
+        .seven-columns
+          figure
+            img.hide-at-desktop(src='/images/DMAL-in-macbook.png')
+          figure
+            img#comp-content.hide-at-tablet(src='/images/DMAL.gif')
+            img.hide-at-tablet(src='/images/macbook.png', style='width: 95%; height: auto; margin-top: 60px')
+        .five-columns
+          h2 Draw me a letter
+          h3
+            | A program that creates a map of the hidden gestures resulting from typing on a computer keyboard.
+          p
+            | This program creates a map of the hidden gestures that result from our typing on the computer keyboard. In
+            | other words, the program draws lines between the keys that are pressed in real time. The focus is then shifted
+            | from the obvious visual result of digital writing (the letter as it is rendered on the screen), to the
+            | movement of digital writing and its visual trace.
+          p
+            | The written text turns into an encrypted image, adding another layer of meaning to the content.
+          a.readmore(href='./projects/draw-me-a-letter.html') Read more
+      article#AArt
+        img(src='/images/ArtificialArt-inBrowser.gif', style='width: 100%; height: auto; margin-bottom: 40px')
+        .five-columns
+          h2 Artificial Art
+          h3
+            | An artistic intervention within Amazon’s online sweatshop Mechanical Turk which presents traces of online
+            | labor, while working within the confines of Mechanical Turk’s privacy policy and terms of use.
+          p
+            | The websites catalog and exhibition explore the work created by the anonymous workers commissioned via
+            | Mechanical Turk. Yet this collection of work is unusual; each drawing reflects a worker’s response to an
+            | automated task-generator, an algorithm programmed to construct random drawing instructions for every worker to
+            | carry out. In this case, the logic behind the instructions is artificial, however the workers’ results
+            | celebrate what it means to be human.
+          a.readmore(href='/projects/artificial-art.html') Read more
+        .six-columns.shift-one.hide-at-tablet
+          img(src='/images/AAI-Hello.png', style='width: 100%; height: auto; margin-bottom: 20px')
+          img(src='/images/AAI-floatingbook.png', style='width: 100%; height: auto; margin-bottom: 20px')
+      article#AARegular
+        .five-columns
+          figure
+            img(src='/images/AAR-letters.gif')
+        .five-columns.shift-one
+          h2 Anti Alias Regular
+          h3
+            | A multi-platform investigation of low-resolution type when rendered on a high-resolution screen.
+          p
+            | Anti Alias takes its name from the technique used to minimizing the distortion artifacts that result form the
+            | shift between high-res to low-res displays.
+          p
+            | The family’s building blocks are composed of diagonal lines varying in width and density; the the ticker and
+            | more dense the lines are, the darker the area looks from a distance. Every letter presents the visual quality
+            | of a blown up anti aliased typeface, while working around the limitations of type-design softwares that are
+            | lacking the option to set different opacities to glyph paths.
+          a.readmore(href='/projects/anti-alias-regular.html') Read more

@@ -1,0 +1,30 @@
+extends ../../layouts/project.jade
+block content
+  main.project-page
+    header
+      include ../common/top_navigation
+    section.other-projects
+      .title-teaser
+        h1 At the Edge of Sight
+        //
+          <h3 class="visitsite">
+          <a href="http://maurannstein.com/game/" target="_blank">Visit site</a>
+          </h3>
+        h3
+          | A 16-page signature that responds to the color red.
+      article
+        figure.featured-image
+          img(src='/images/IR3.jpg')
+        .five-columns
+          figure
+            img(src='/images/IR1.jpg')
+          p
+            | Enclosed within the main text which deals with the discovery and applications of infrared light, are three politically charged articles dealing with different authoritarian attempts to conceal information from the public.
+        .six-columns.shift-one.clear
+          figure
+            img(src='/images/IR2.jpg')
+        div
+          figure
+            img(src='/images/IR4.jpg')
+          figure
+            img(src='/images/IR5.jpg')

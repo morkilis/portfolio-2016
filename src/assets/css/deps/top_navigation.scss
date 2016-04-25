@@ -1,0 +1,70 @@
+@import './variables';
+
+.nav-container {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: $light_grey;
+  position: relative;
+  transition: 300ms ease-in-out;
+  transform: translate(0px, 0px);
+  .current-section{
+      position: relative;
+      text-align: center;
+      width: 600px;
+      margin: 0 auto;
+      font-size: 14px;
+      z-index: -1;
+      & a {
+        padding: 0 30px;
+        font-size: 18px;
+        }
+  }
+  /*.nav {
+      padding: 5px 10px;
+    .current-time, .current-weather, .seperator, .about-me, .home {
+      padding-right: 10px;
+    }
+    img {
+        height: 14px;
+        width: auto;
+    }
+    .email-me {
+      position: absolute;
+      right: 10px;
+    }
+    a:hover {
+      opacity: 0.6;
+    }
+  }*/
+
+
+    .current-time, .current-weather, .seperator, .about-me, .home {
+      padding-right: 14px;
+      float: left;
+    }
+    img {
+        height: 14px;
+        width: auto;
+        margin-top: 2px;
+    }
+    .email-me {
+      position: absolute;
+      right: 10px;
+    }
+    a:hover {
+      opacity: 0.6;
+    }
+  
+
+
+
+
+
+
+
+
+ /* &.folded-up {
+    transition: 300ms ease-in-out;
+    transform: translate(0px, -30px);
+  }*/
+}
