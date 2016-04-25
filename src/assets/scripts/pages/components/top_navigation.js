@@ -5,28 +5,28 @@ const weather = require('simpleweather');
 
 
 const pageToName = {
-  "index": "About me"
-  , "artificial-art": "Selected Projects"
-  , "20Days-20Nights": "Other Projects"
-  , "aia-heritage-ball": "Other Projects"
-  , "anti-alias-regular": "Selected Projects"
-  , "boropark-laundromat": "Other Projects"
-  , "draw-me-a-letter": "Selected Projects"
-  , "drawings": "Other Projects"
-  , "edge-of-sight": "Other Projects"
-  , "exquisite-corpse": "Other Projects"
-  , "free-culture-manifesto": "Other Projects"
-  , "from-birds-to-rooftops": "Other Projects"
-  , "future-of-printed-book": "Other Projects"
-  , "nothing-anywhere": "Other Projects"
-  , "NYC-philharmonic": "Other Projects"
-  , "ourtype": "Other Projects"
-  , "paintings": "Other Projects"
-  , "someones-story": "Other Projects"
-  , "sound-walk": "Other Projects"
-  , "springtime": "Other Projects"
-  , "teabox": "Other Projects"
-  , "wiki-book": "Other Projects"
+  "index": " "
+  , "artificial-art": "selected projects"
+  , "20Days-20Nights": "other projects"
+  , "aia-heritage-ball": "other projects"
+  , "anti-alias-regular": "selected projects"
+  , "boropark-laundromat": "other projects"
+  , "draw-me-a-letter": "selected projects"
+  , "drawings": "other projects"
+  , "edge-of-sight": "other projects"
+  , "exquisite-corpse": "other projects"
+  , "free-culture-manifesto": "other projects"
+  , "from-birds-to-rooftops": "other projects"
+  , "future-of-printed-book": "other projects"
+  , "nothing-anywhere": "other projects"
+  , "NYC-philharmonic": "other projects"
+  , "ourtype": "other projects"
+  , "paintings": "other projects"
+  , "someones-story": "other projects"
+  , "sound-walk": "other projects"
+  , "springtime": "other projects"
+  , "teabox": "other projects"
+  , "wiki-book": "other projects"
 };
 
 function bindCurrentTime(el) {
@@ -56,27 +56,27 @@ function getCurrentPage() {
 const TopNavigation = Marionette.ItemView.extend(
     {
       template: false,
-      el: ".top-navigation-container",
+      el: ".nav-container",
       ui: {
         'topNavigationCurrentTime': '.current-time',
         'currentLocation': '.current-location',
         'currentWeather': '.current-weather',
-        'currentSection': '.current-section'
+        'currentSection': '.current-section > span'
       },
       onRender: function() {
-        setAddress(this.ui.currentLocation, this._setWeather.bind(this));
-        setInterval(bindCurrentTime.bind(this, this.ui.topNavigationCurrentTime), 500);
+        //setAddress(this.ui.currentLocation, this._setWeather.bind(this));
+        //setInterval(bindCurrentTime.bind(this, this.ui.topNavigationCurrentTime), 500);
         this._setPageName(getCurrentPage())
-        $(window).scroll(()=> {
-          this.didScroll = true;
-        });
-        setInterval(() => {
-          if (this.didScroll) {
-            this._hasScroller();
-            this.didScroll = false;
-          }
-        }, 250);
-        setInterval(()=> {this._show()}, 1200)
+        // $(window).scroll(()=> {
+        //   this.didScroll = true;
+        // });
+        // setInterval(() => {
+        //   if (this.didScroll) {
+        //     this._hasScroller();
+        //     this.didScroll = false;
+        //   }
+        // }, 250);
+        //setInterval(()=> {this._show()}, 1200)
 
       },
       _setPageName: function(page) {

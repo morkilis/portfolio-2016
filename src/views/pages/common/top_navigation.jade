@@ -1,8 +1,23 @@
-.top-navigation-container.folded-up
-  .top-navigation
-    .current-time
-    .seperator |
-    a.current-section(href="/") About me
-    .seperator |
-    .current-weather
-    .current-location
+//- .top-navigation-container.folded-up
+//-   .top-navigation
+//-     .current-time
+//-     .seperator |
+//-     a.current-section(href="/") About me
+//-     .seperator |
+//-     .current-weather
+//-     .current-location
+
+
+.nav-container
+   a.home(href="/")
+      img(src='/images/home-icon.png')
+   a.about-me(href="/")
+      img(src='/images/info-icon.png')
+   a.email-me(href="/")
+      img(src='/images/email-icon.png')
+   .current-section
+      a.prev(href="/")
+         | ←
+      span
+      a.next(href="/")
+         | →
