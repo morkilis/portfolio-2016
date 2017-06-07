@@ -1,0 +1,270 @@
+body{
+	-webkit-background-size: cover;
+	width:100%;
+	padding:0;
+	margin: 0px 0px 0px 0px;
+	
+
+}
+
+.third.index{
+	color: black;
+}
+.third {
+	padding: 0px;
+	color: white;
+	margin: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: Arial, Sans-Serif;
+	font-size: 23px;
+	position: fixed;
+	width: 300px;
+	text-decoration: none;
+/*	 background-color:yellow; 
+*/}
+
+.mask {
+	width: 40px;
+	height: 210px;
+	position:fixed;
+	}
+
+.sprite-yellow {
+	width: 260px;
+	height: 320px;
+	background-image: url(../images/yellow-box.png);
+	position: fixed;
+	left: 50%;
+	margin-left: -105px;
+	top:50%;
+	margin-top: -140px;
+	}
+.sprite-yellow:hover {
+	background-position: -260px 0;
+	}
+.sprite-yellow:active {
+	background-position: -520px 0;
+	}
+#yellow-top {
+	width: 260px;
+	height: 37px;
+	left: 50%;
+	margin-left: -105px;
+	top:50%;
+	margin-top: -140px;
+	/*background: yellow; */
+	}
+#yellow-right {
+	width: 47px;	
+	height: 320px;
+	left: 50%;
+	margin-left: 110px;
+	top:50%;
+	margin-top: -140px;
+/*	 background: black; 
+*/	}
+
+
+
+.sprite-blue {
+	width: 185px;
+	height: 228px;
+	background-image: url(../images/blue-box.png);
+	position: fixed;
+	left: 50%;
+	margin-left: -105px;
+	top:50%;
+	margin-top: -48px;
+	}
+.sprite-blue:hover {
+	background-position: -185px 0;
+	}
+.sprite-blue:active {
+	background-position: -370px 0;
+	}
+#blue-top {
+	width: 185px;
+	height: 53px;
+	left: 50%;
+	margin-left: -100px;
+	top:50%;
+	margin-top: -80px;
+/*	 background: black; 
+*/	}
+#blue-right {
+	width: 43px;	
+	height: 258px;
+	left: 50%;
+	margin-left: 53px;
+	top:50%;
+	margin-top: -80px;
+/*	 background: black; 
+*/	}
+	
+	
+	
+.sprite-green {
+	width: 136px;
+	height: 167px;
+	background-image: url(../images/green-box.png);
+	position: fixed;
+	left: 50%;
+	margin-left: -105px;
+	top:50%;
+	margin-top: 13px;
+	}
+.sprite-green:hover {
+	background-position: -137px 0;
+	}
+.sprite-green:active {
+	background-position: -274px 0;
+	}
+#green-top {
+	width: 135px;
+	height: 30px;
+	left: 50%;
+	margin-left: -100px;
+	top:50%;
+	margin-top: -2px;
+/* 	background: black; 
+*/	}
+#green-right {
+	width: 25px;	
+	height: 175px;
+	left: 50%;
+	margin-left: 9px;
+	top:50%;
+	margin-top: -2px;
+/*	 background: black; 
+*/	}
+	
+	
+	
+	
+.sprite-cyan{
+	width: 100px;
+	height: 120px;
+	background-image: url(../images/cyan-box.png);
+	position: fixed;
+	top:429px;
+	left: 50%;
+	margin-left: -105px;
+	top:50%;
+	margin-top: 60px;
+	
+	}
+.sprite-cyan:hover {
+	background-position: -100px 0;
+	}
+.sprite-cyan:active {
+	background-position: -200px 0;
+	}
+#cyan-top {
+	width: 93px;
+	height: 22px;
+	left: 50%;
+	margin-left: -100px;
+	top:50%;
+	margin-top: 50px;
+/*	 background: black; 
+*/	}
+#cyan-right {
+	width: 13px;	
+	height: 126px;
+	top:410px;
+	left: 50%;
+	margin-left: -22px;
+	top:50%;
+	margin-top: 50px;
+/*	 background: black; 
+*/	}
+	
+	
+	
+	
+.sprite-magenta {
+	width: 60px;
+	height: 77px;
+	background-image: url(../images/magenta-box.png);
+	position: fixed;
+	left: 50%;
+	margin-left: -105px;
+	top:50%;
+	margin-top: 103px;
+	}
+.sprite-magenta:hover {
+	background-position: -60px 0;
+	}
+.sprite-magenta:active {
+	background-position: -120px 0;
+	}
+#magenta-top {
+	width: 63px;
+	height: 18px;
+	left: 50%;
+	margin-left: -98px;
+	top:50%;
+	margin-top: 90px;
+/*	 background: black; 
+*/	}
+#magenta-right {
+	width: 18px;	
+	height: 83px;
+	left: 50%;
+	margin-left: -53px;
+	top:50%;
+	margin-top: 90px;
+/*	 background: black; 
+*/	}
+	
+	
+	
+	
+	
+#third-left-top {
+	vertical-align: top;
+	left: 0;
+	}
+
+#third-middle-top {
+	vertical-align: top;
+	left: 50%;
+	margin-left: -80px;
+}
+
+#third-right-top {
+	vertical-align: top;
+	right: 0;
+	text-align: right;
+}
+
+#third-left-bottom {
+	vertical-align: bottom;
+	left: 0;
+	bottom: 0;
+	
+}
+
+#third-right-bottom {
+	vertical-align: bottom;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+
+#left-arrow {
+	left: 0;
+	top:50%;
+	margin-top: -6px;
+
+
+}
+
+#right-arrow {
+	right: 0;
+	text-align: right;
+	top:50%;
+	margin-top: -6px;
+}
+
