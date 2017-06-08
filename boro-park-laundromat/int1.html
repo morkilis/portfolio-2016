@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Boro Park Wash Center</title>
+		<link rel="stylesheet" href="assets/css/laundromat_play.css">
+		<link rel="icon" type="image/png" href="assets/images/boro-favicon2.png">
+	</head>
+	<body>
+		<a class="third" href="index.html"> <div id="third-left-top"> BORO PARK <br> WASH CENTER </div> </a>
+		<div class="third" id="third-middle-top"> 5321 FORT<br>HAMILTON PKWY<br>BROOKLYN, NY </div>
+		<div class="third" id="third-right-top"> FULL SERVICE<br>SELF SERVICE </div>
+		<div class="third" id="third-left-bottom"> MON-SUN 7:30 AM-8 PM </div>
+		<div class="third" id="third-right-bottom"> (718) 438-3823 </div>
+
+		<a href="w1.html"><div class="sprite-yellow"></div></a>
+		<a href="m1.html"><div class="sprite-blue"></div></a>
+		<a href="i1.html"><div class="sprite-green"></div></a>
+		<a href="c1.html"><div class="sprite-cyan"></div></a>
+		<a href="#"><div id="magenta-fixed"></div></a>
+		
+		<!-- 	<div class="mask" id="yellow-top"></div> 
+		<div class="mask" id="yellow-right"></div>
+		<div class="mask" id="blue-top"></div> 
+		<div class="mask" id="blue-right"></div>
+		<div class="mask" id="green-top"></div>
+		<div class="mask" id="green-right"></div>
+		<div class="mask" id="cyan-top"></div> 
+		<div class="mask" id="cyan-right"></div>
+		<div class="mask" id="magenta-top"></div> 
+		<div class="mask" id="magenta-right"></div>
+ -->
+
+
+		<a href="w1.html"><div class="third right-arrow" id="left-arrow-blue"> > </div> </a>
+		<a href="c1.html"><div class="third left-arrow" id="left-arrow-magenta"> < </div> </a>
+
+
+
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script>
+		var backgrounds = Array('assets/images/1_intimate.gif','assets/images/2_intimate.gif','assets/images/3_intimate.gif','assets/images/4_intimate.gif','assets/images/5_intimate.gif','assets/images/6_intimate.gif');
+		var currBgIndex = Math.floor(Math.random()*backgrounds.length);
+		var randomBackground = 'url(' + backgrounds[currBgIndex] + ')';
+		$('body').css('background-image',randomBackground);
+
+		var new_bg_index;
+
+function getRandom(current) {
+	randReturn = Math.floor(Math.random()*backgrounds.length);
+
+	while (randReturn == current) {
+		randReturn = Math.floor(Math.random()*backgrounds.length);
+	}
+	console.log('randreturn: ' + randReturn);
+	return randReturn;
+}
+
+$('#magenta-fixed').click(function() {
+	if (new_bg_index == undefined) {
+		new_bg_index = getRandom(currBgIndex);
+		var randomBackground = 'url(' + backgrounds[new_bg_index] + ')';
+	} else {
+		new_bg_index = getRandom(new_bg_index);
+		var randomBackground = 'url(' + backgrounds[new_bg_index] + ')';
+	}
+	$('body').css('background-image',randomBackground);	
+});
+
+</script>
+
+	</body>
+	</html>
