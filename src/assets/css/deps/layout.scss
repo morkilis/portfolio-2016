@@ -46,7 +46,6 @@ section {
 }
 
 div.aboutme {
-  width: 100vw;
   height: 100vh;
   background-color: $light_grey;
   & > div {
@@ -59,6 +58,9 @@ div.aboutme {
     }
     @include at-mobile {
       max-width: 80%;
+    }
+    & > h1 {
+      z-index: 10;
     }
 
   }

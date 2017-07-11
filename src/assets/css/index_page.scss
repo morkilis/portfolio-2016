@@ -1,3 +1,15 @@
 .index-page {
+	.nav-container .current-section a {
+		display: none;
+	}
+
+	.aboutme img {
+		z-index: 10;
+	}
+
+	.aboutme a {
+		font-size: inherit;
+	}
+
 
 }

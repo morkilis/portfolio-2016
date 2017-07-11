@@ -31,7 +31,7 @@ gulp.task('assets:scripts:pages', function () {
         entries: [fullPath],
         extensions: [],
         debug: gutil.env.type!=='production'
-      };
+      };      
       stream.add(browserifyHelper(file, `${paths.dest}/scripts/pages`, opts, gutil.env.watch));
     });
   });

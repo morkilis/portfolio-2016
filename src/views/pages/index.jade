@@ -1,4 +1,6 @@
 extends ../layouts/common.jade
+block styles
+  link(rel='stylesheet', href='/css/index_page.css')
 block append scripts
   script(src='/scripts/pages/index.js')
 block content
@@ -10,11 +12,14 @@ block content
       source(src='/music/maurann.ogg', type='audio/ogg')
     .aboutme
       div
-        //- img(src='/images/morenski.png', style='position: absolute; bottom: 0; left: 50%; margin-left: -40px; width: 80px; height: auto;')
+        img(src='/images/morenski.png', style='position: absolute; bottom: 0; left: 50%; margin-left: -40px; width: 80px; height: auto;')
         h1.twelve-columns.clear
           | Hi there! 
           br
-          | My name is Maurann and I’m an Israeli designer based in New York. Usually people don’t know how to
+          | My name is Maurann and I’m a product designer currently working at  
+          a(href='https://events.newschool.edu/event/design_and_hack_opening_ceremonies_hackathon#.VrUO3jYrJE4', target='_blank') 
+            span Helix
+          | . Usually people don’t know how to
           span.maurann-name &nbsp;pronounce my name
           |  but that’s okay.
     section.featured

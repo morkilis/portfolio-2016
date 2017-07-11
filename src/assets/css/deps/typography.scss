@@ -67,6 +67,7 @@ h1 {
    span{
      color: $blue;
      cursor: pointer;
+     font-size: inherit;
     }
     @include at-tablet {
       font-size: 42px;
@@ -98,7 +99,7 @@ h3 {
    margin: 40px 0 24px 0;
    color: black;
   &.visitsite > a {
-    font-size: 20px;
+    font-size: inherit;
     line-height: 24px;
   }
   @include at-tablet {
@@ -133,7 +134,9 @@ a {
   }
 }
   
-
+.aboutme a {
+    border-bottom: none;
+}
 
 
 
